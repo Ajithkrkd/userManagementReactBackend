@@ -1,4 +1,4 @@
-package com.ajith.userManagement_redux.auth.Request;
+package com.ajith.userManagement_redux.user.Response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class RegisterRequest {
+public class UserDetailsResponse {
     private String firstname;
     private String lastname;
     private String email;
-    private String password;
+
 }
