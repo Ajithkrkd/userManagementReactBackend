@@ -28,9 +28,13 @@ public class User implements UserDetails {
     private String lastname;
     private String email;
     private String password;
-
+    private String profileImagePath;
+    private  String phonenumber;
+    private boolean isActive = true;
     @Enumerated(EnumType.STRING)
     private Role role;
+
+
 
     @Override
     public Collection < ? extends GrantedAuthority > getAuthorities ( ) {
@@ -65,5 +69,16 @@ public class User implements UserDetails {
     @Override
     public boolean isEnabled ( ) {
         return true;
+    }
+
+
+    public boolean getIsActive() {
+
+        return isActive;
+    }
+
+    public void setIsActive(boolean isActive) {
+
+        this.isActive = isActive;
     }
 }

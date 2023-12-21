@@ -13,5 +13,7 @@ public class UserDetailsResponse {
     private String firstname;
     private String lastname;
     private String email;
+    private String phonenumber;
+    private String profileImagePath;
 
 }
